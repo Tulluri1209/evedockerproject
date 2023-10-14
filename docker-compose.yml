@@ -2,7 +2,7 @@
 version: "3"
 services:
   movie:
-    image: rahamshaik/phonepaymovies:v1
+    image: bhavana/phonepaymovies:v1
     ports:
       - 8007:80
     volumes:
@@ -10,7 +10,7 @@ services:
     deploy:
       replicas: 4
   train:
-    image: rahamshaik/phonepaytrains:v1
+    image: bhavana/phonepaytrains:v1
     volumes:
       - volume2
     ports:
@@ -18,7 +18,7 @@ services:
     deploy:
       replicas: 4
   recharge:
-    image: rahamshaik/phonepayrecharges:v1
+    image: bhavana/phonepayrecharges:v1
     volumes:
       - volume3
     ports:
